@@ -6,6 +6,8 @@ app.use(json());
 
 app.get("/students", async (req: Request, res: Response) => {
   console.log('teste do pull request no github outra vez')
+  console.log('2')
+  console.log('3')
   const students = await prisma.student.findMany();
   res.send(students);
 });
