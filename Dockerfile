@@ -8,6 +8,6 @@ EXPOSE 5000
 
 RUN npm i
 
-RUN npx tsc -p tsconfig.json
+RUN npm run build
 
 CMD ["npm", "run", "start"]
