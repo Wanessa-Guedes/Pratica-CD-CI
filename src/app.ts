@@ -9,6 +9,7 @@ app.get("/students", async (req: Request, res: Response) => {
   console.log('2')
   console.log('3')
   console.log('4')
+  console.log('5')
   const students = await prisma.student.findMany();
   res.send(students);
 });
